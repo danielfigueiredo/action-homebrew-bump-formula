@@ -166,6 +166,8 @@ module Homebrew
              '--no-browse',
              "--message=#{message}",
              "--version=#{version}",
+             "--revision=#{version}",
+             "--no-fork",
              *("--fork-org=#{org}" unless org.blank?),
              *('--force' unless force.false?),
              formula
